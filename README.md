@@ -427,3 +427,18 @@ unsure how to format a particular block of code.
 - [PEP 8 - Style Guide for Python Code][pep 8]
 
 [pep 8]: https://peps.python.org/pep-0008/
+
+
+
+def admin_login(username, password):
+    if (username == "admin" or username == "ADMIN") and password == "12345":
+        return "Access granted"
+    else:
+        return "Access denied"
+
+# Example usage
+username = input("Enter username: ")
+password = input("Enter password: ")
+result = admin_login(username, password)
+print(result)
+
