@@ -35,22 +35,22 @@ temperature = float(input("Enter the temperature: "))
 result = hows_the_weather(temperature)
 print(result)
 
-def fizzbuzz(number_input):
- if ( number_input == "1") :
+def fizzbuzz(num):
+ if ( num == "1") :
   print("1")
- elif (number_input == "2"):
+ elif (num== "2"):
   print("2") 
- elif(number_input == "3"):
+ elif(num == "3"):
   print("Fizz")
- elif(number_input == "4"):
+ elif(num == "4"):
   print("4") 
- elif(number_input == "5"):
+ elif(num == "5"):
   print("Buzz")
- elif(number_input == "15"):
+ elif(num == "15"):
   print("FizzBuzz")  
 
-number_input = int(input("Enter a number: "))
-result = fizzbuzz(number_input)
+num= int(input("Enter a number: "))
+result = fizzbuzz(num)
 print(result)
 
 def calculator(operation, num1, num2):
@@ -62,12 +62,12 @@ def calculator(operation, num1, num2):
    print("6")
   elif (operation == "/" and num1 == "4" and num2 == "2"):
    print("2")
-  elif(operation == "none" and num1 == "4" and num2 == "2"):
-   print( "Invalid operation!" "None")
+  else: ( operation == "none" and num1 == "4" and num2 == "2")
+print( "Invalid operation!" "None")
     
 
-operation_input = input("Enter operation (+, -, *, /): ")
-num1_input = float(input("Enter first number: "))
-num2_input = float(input("Enter second number: "))
-result = calculator(operation_input, num1_input, num2_input)
+operation = input("Enter operation (+, -, *, /): ")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+result = calculator(operation, num1, num2)
 print(result)
